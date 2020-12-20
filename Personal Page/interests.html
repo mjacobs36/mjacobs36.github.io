@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interests</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon=" sizes="180x180" href="resources\images\favicon_io\apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="resources\images\favicon_io\favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="resources\images\favicon_io\favicon-16x16.png">
+        <link rel="manifest" href="resources\images\favicon_io\site.webmanifest">
+    </head>
+    <style>
+        .mySlides {display:none;}
+    </style>
+    <body>
+        <header>
+            <h3 class="site-name">mjj</h3>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="experience.html">Experience</a>
+                    <div class="dropdown">
+                        <a class ="drop-button" href="interests.html">Interests
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">Baking</a>
+                            <a href="#">Reading</a>
+                            <a href="#">Music</a>
+                            <a href="#">Traveling</a>
+                          </div>
+                    </div>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Interests</h1>
+            </section>
+
+            <section id="interest-categories">
+                <div class="category">
+                    <div class="interest-text">
+                    <h3>Baking</h3>
+                    <p>Enter something about cooking adventures. See my favorite <a href="">recipes</a>.</p>
+                    </div>
+                    <div class="space"></div>
+                    <div class="img-container">
+                        <img class="mySlides1" src="resources\images\MVIMG_20200923_143600.jpg" alt="peanut butter and jelly cookies">
+                        <img class="mySlides1" src="resources\images\MVIMG_20200810_094747.jpg" alt="">
+                        <img class="mySlides1" src="resources\images\MVIMG_20200419_175102.jpg" alt="">
+                        
+                        <div class="slide-buttons">
+                            <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="right-button" onclick="plusDivs(+1)">&#10095;</button>
+                        </div>
+                    </div>
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+                    
+                    function plusDivs(n) {
+                      showDivs(slideIndex += n);
+                    }
+                    
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides1");
+                      if (n > x.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      x[slideIndex-1].style.display = "block";  
+                    }
+                    </script>
+                </div>
+                <div class="category">
+                    <div class="img-container2">
+                        <img src="" alt="">
+                    </div>
+                    <div class="space2"></div>
+                    <div class="interest-text">
+                    <h3>Reading</h3>
+                    <p>Enter something about books. See my <a href="">book reviews</a>.</p>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="interest-text">
+                    <h3>Playlist</h3>
+                    <p>Enter something about music. See my favorite <a href="">songs</a>.</p>
+                    </div>
+                    <div class="space"></div>
+                    <div class="playlist">
+                        <iframe src="https://open.spotify.com/embed/playlist/7maJlvCXfFab4YlRL0qDpH" width="400" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>                    </div>
+                </div>
+                <div class="category">
+                    <div class="img-container2">
+                        <img src="" alt="">
+                    </div>
+                    <div class="space"></div>
+                    <div class="interest-text">
+                    <h3>Travel</h3>
+                    <p>Enter something about traveling. See my favorite <a href="">places</a>.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+         <footer>
+            Property of Meredith Jacobs
+        </footer>
+    </body>

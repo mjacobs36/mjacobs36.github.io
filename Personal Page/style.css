@@ -1,0 +1,417 @@
+* {
+    font-size: 16px;
+}
+
+body {
+    background-color: #D8D9D7;
+}
+
+header {
+    height: 64px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 10;
+    background-color: #BEBF93;
+    top: 0;
+}
+
+.site-name {
+    margin-left: 24px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 150%;
+    color: #39391E;
+}
+
+nav {
+    float: right;
+    align-items: center;
+    margin-right: 24px;
+}
+   
+nav a,nav a:visited {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #39391E;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+nav a:hover, .drop-button{
+    color: #733439;
+}
+
+/* drop down */
+
+/* The dropdown container */
+.dropdown {
+    display: inline-block;
+    align-items: center;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D8D9D7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: #39391E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #733439;
+    color: white;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+.hero {
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color:#39391E;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.hero h1 {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 200%;
+    color: #BEBF93;
+}
+
+.about {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    margin-top: 10px;
+    @media only screen and (max-width: 600px) {
+        display: block
+    }
+}
+
+.about img {
+    width: 40%;
+    padding: 20px 20px;
+    margin: 30px 80px;
+}
+
+#about-text {
+    align-items: center;
+    justify-content: center;
+}
+
+.about h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    color: #733439;
+}
+
+.about p {
+    font-family: 'Montserrat', sans-serif;
+    color: #39391E;
+
+}
+
+.about-me {
+    width: 60%;
+    height: auto;
+    display: block;
+    padding: 24px 24px;
+    margin: 76px 26px;
+    border: 8px solid #D8D9D7;
+}
+
+.next-step {
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #D8D9D7;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.experience, .interest {
+    width: 50%;
+    height: 90%;
+    align-items: center;
+    margin: auto;
+    padding: 5%;
+    text-align: center;
+}
+
+.experience h3, .interest h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    color: #39391E;
+}
+
+.experience p, .interest p {
+    font-family: 'Montserrat', sans-serif;
+    color: #39391E;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #39391E;
+    color: white;
+    border: 2px solid #39391E;    
+}
+
+button:hover {
+    background-color: #A86245;
+    color: white; 
+    border: 2px solid #A86245;   
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+footer {
+    margin-top: 10px;
+    font-family: 'Libre Baskerville', serif;
+    background-color: #733439; 
+    color: #D8D9D7;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.resume {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    border: 8px solid #D8D9D7;
+    color: #39391E;
+    margin-top: 10px;
+}
+
+#resume-skills {
+    width: 24%;
+    margin: 10px 20px;
+}
+
+#resume-experience {
+    width: 36%;
+    margin: 10px 20px;
+}
+
+#resume-skills h3, #resume-experience h3  {
+    font-family: 'Libre Baskerville', serif; 
+    font-size: 24px;
+    color: #733439;
+
+}
+
+#resume-skills h4 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    color: #733439;
+     
+}
+
+#resume-skills p, #resume-experience h4, #resume-experience h5, #resume-experience li, #resume-experience p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#resume-experience h4, #resume-experience h5 {
+    line-height: normal;
+}
+
+#resume-experience h5 {
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+#resume-experience h4 {
+    margin-bottom: 0px;
+}
+
+#work, #academics, #skills {
+    border-bottom: 1px solid #733439;
+}
+
+/* interests page */
+
+#interest-categories {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.category {
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.category img {
+    padding: 10px 0;
+    width: 400px;
+    height: 300px;
+}
+
+.interest-text {
+    display: block;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid #A86245;
+    margin: 0 12%;
+}
+
+.interest-text h3 {
+    font-family: 'Libre Baskerville', serif;
+    color: #A86245;
+
+}
+
+.interest-text p {
+    font-family: 'Montserrat', sans-serif;
+    color: #39391E;
+}
+
+/* slideshow */
+
+.left-button, .right-button {
+    color: #BEBF93;
+    background-color: #39391E;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    top: 50%;
+    position: absolute;
+    margin: auto;
+    border: none;
+}
+
+.right-button {
+    right: 0%;
+}
+
+.img-container {
+    height: auto;
+    margin-top: 30px;
+    display: block;
+    position: relative;
+}
+
+.space {
+    width: 50px;
+}
+
+.space2 {
+    width: 50px;
+}
+
+.img-container2 {
+    margin-left: 10%;    
+}
+
+/* contact page */
+
+form {
+    height: 500px;
+    width: fit-content;
+    align-items: center;
+    margin: 10px auto;
+    font-family: 'Libre Baskerville', serif;
+    color: #39391E;
+}
+
+label br {
+    margin: 10px 0;
+}
+
+input[id=name] {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+input[id=email-address] {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+input[id=message] {
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+input[type=submit], input[type=reset] {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #39391E;
+    color: white;
+    border: 2px solid #39391E; 
+    margin-right: 10px;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #A86245;
+    color: white; 
+    border: 2px solid #A86245;   
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+#linkedin {
+    width: auto;
+    height: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #733439;
+    padding: 10px 0;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#linkedin a {
+    text-decoration: none;
+    color: #733439;
+    font-size: 20px;
+}
+
+#linkedin a:hover {
+    color: #39391E;
+    font-size: 20px;
+}
+
