@@ -25,7 +25,7 @@
                             <i class="fa fa-caret-down"></i>
                         </a>
                         <div class="dropdown-content">
-                            <a href="#">Baking</a>
+                            <a href="baking.html">Baking</a>
                             <a href="#">Reading</a>
                             <a href="#">Music</a>
                             <a href="#">Traveling</a>
@@ -39,76 +39,81 @@
             <section class="hero">
                 <h1>Interests</h1>
             </section>
-
-            <section id="interest-categories">
-                <div class="category">
-                    <div class="interest-text">
-                    <h3>Baking</h3>
-                    <p>Enter something about cooking adventures. See my favorite <a href="">recipes</a>.</p>
+        
+            <section class="grid">
+                <div class="grid-text1">
+                    <div class="left-copy"> 
+                        <h3>Baking</h3>
+                        <p>Enter something about cooking adventures. See my favorite <a href="C:\Users\mjjac\Documents\Personal Page (1)\baking.html">recipes</a>.</p>
+                    </div>    
+                </div>
+        
+                <div class="grid-img1">
+                    <img class="mySlides2" src="resources\images\Baking_imgs\MVIMG_20200923_143600.jpg" alt="peanut butter and jelly cookies">
+                    <img class="mySlides2" src="resources\images\Baking_imgs\MVIMG_20200810_094747.jpg" alt="homemade chocolate croissants">
+                    <img class="mySlides2" src="resources\images\Baking_imgs\MVIMG_20200419_175102.jpg" alt="homemade Swedish cardamom buns">
+                            
+                    <button class="left-button1" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="right-button1" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+        
+                <div class="grid-img2">
+                    <img src="resources\images\Baking_imgs\MVIMG_20200408_205435.jpg" alt="placeholder">
+                </div>
+                    
+                <div class="grid-text2">
+                    <div class="right-copy">
+                        <h3>Reading</h3>
+                        <p>Enter something about books. See my <a href="">book reviews</a>.</p>
                     </div>
-                    <div class="space"></div>
-                    <div class="img-container">
-                        <img class="mySlides1" src="resources\images\MVIMG_20200923_143600.jpg" alt="peanut butter and jelly cookies">
-                        <img class="mySlides1" src="resources\images\MVIMG_20200810_094747.jpg" alt="">
-                        <img class="mySlides1" src="resources\images\MVIMG_20200419_175102.jpg" alt="">
+                </div>
+                    
+                <div class="grid-text3">
+                    <div class="left-copy">
+                        <h3>Playlist</h3>
+                        <p>Enter something about music. See my favorite <a href="">songs</a>.</p>
+                    </div>
+                </div>
                         
-                        <div class="slide-buttons">
-                            <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
-                            <button class="right-button" onclick="plusDivs(+1)">&#10095;</button>
-                        </div>
-                    </div>
-                    <script>
-                        var slideIndex = 1;
-                        showDivs(slideIndex);
+                <div class="grid-playlist3">
+                    <iframe height="350px" src="https://open.spotify.com/embed/playlist/7maJlvCXfFab4YlRL0qDpH" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>                    
+                </div>
+                        
+                <div class="grid-img4">
+                    <img src="resources\images\Travel_imgs\MVIMG_20191231_102329.jpg" alt="meredith at rainbow mountain in peru">
+                </div>
                     
-                    function plusDivs(n) {
-                      showDivs(slideIndex += n);
-                    }
-                    
-                    function showDivs(n) {
-                      var i;
-                      var x = document.getElementsByClassName("mySlides1");
-                      if (n > x.length) {slideIndex = 1}
-                      if (n < 1) {slideIndex = x.length}
-                      for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";  
-                      }
-                      x[slideIndex-1].style.display = "block";  
-                    }
-                    </script>
-                </div>
-                <div class="category">
-                    <div class="img-container2">
-                        <img src="" alt="">
-                    </div>
-                    <div class="space2"></div>
-                    <div class="interest-text">
-                    <h3>Reading</h3>
-                    <p>Enter something about books. See my <a href="">book reviews</a>.</p>
-                    </div>
-                </div>
-                <div class="category">
-                    <div class="interest-text">
-                    <h3>Playlist</h3>
-                    <p>Enter something about music. See my favorite <a href="">songs</a>.</p>
-                    </div>
-                    <div class="space"></div>
-                    <div class="playlist">
-                        <iframe src="https://open.spotify.com/embed/playlist/7maJlvCXfFab4YlRL0qDpH" width="400" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>                    </div>
-                </div>
-                <div class="category">
-                    <div class="img-container2">
-                        <img src="" alt="">
-                    </div>
-                    <div class="space"></div>
-                    <div class="interest-text">
-                    <h3>Travel</h3>
-                    <p>Enter something about traveling. See my favorite <a href="">places</a>.</p>
+                <div class="grid-text4">
+                    <div class="right-copy">
+                        <h3>Travel</h3>
+                        <p>Enter something about traveling. See my favorite <a href="">places</a>.</p>
                     </div>
                 </div>
             </section>
         </main>
-         <footer>
+        
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                            
+                function plusDivs(n) {
+                showDivs(slideIndex += n);
+                }
+                            
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides2");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                        }
+                    x[slideIndex-1].style.display = "block";  
+                }
+            </script>
+            
+        <footer>
             Property of Meredith Jacobs
         </footer>
     </body>
+</html>
