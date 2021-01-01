@@ -61,6 +61,10 @@ nav a:hover, .drop-button{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+
+  .dropdown a {
+      color: #39391E;
+  }
   
   /* Links inside the dropdown */
   .dropdown-content a {
@@ -279,6 +283,7 @@ footer {
     grid-column-end: entry2;
     grid-row-start: row1;
     grid-row-end: row2;
+    height: fit-content;
 }
 
 .grid-img1 {
@@ -305,6 +310,8 @@ footer {
     grid-column-end: last;
     grid-row-start: row2;
     grid-row-end: row3;
+    height: fit-content;
+
 }
 
 .grid-playlist3 {
@@ -312,6 +319,7 @@ footer {
     grid-column-end: last;
     grid-row-start: row3;
     grid-row-end: row4;
+    margin: 0 auto;
 }
 
 .grid-text3 {
@@ -319,6 +327,8 @@ footer {
     grid-column-end: entry2;
     grid-row-start: row3;
     grid-row-end: row4;
+    height: fit-content;
+
 }
 
 
@@ -332,6 +342,8 @@ footer {
     grid-column-start: entry2;
     grid-column-end: last;
     grid-row: row4;
+    height: fit-content;
+
 }
 
 .left-copy, .right-copy {
@@ -341,6 +353,7 @@ footer {
     margin: 0 20%;
     background-color: white;
     text-align: center;
+    padding: 10px;
     
 }
 
@@ -354,7 +367,7 @@ footer {
     color: #39391E;
 }
 
-.left-button1, .right-button1 {
+.left-button1, .right-button1, .left-button, .right-button{
     color: #BEBF93;
     background-color: #39391E;
     padding: 10px 20px;
@@ -368,7 +381,7 @@ button:focus {
     outline:none;
 }
 
-.right-button1 {
+.right-button1, .right-button {
     right: 0%;
 }
 
@@ -520,51 +533,105 @@ input[type=submit]:hover, input[type=reset]:hover {
 
 /* book review page */
 
+/* book review positioning left aligned */
 .review-grid {
     display: grid;
     width: 100%;
+    row-gap: 1em;
+    column-gap: 2%;
     grid-template-columns: [img-col] 38% [icon-col1] 18% [icon-col2] 18% [icon-col3] 18% ;
-    grid-template-rows: [top-row] 33% [botton-row] 63% ;    
+    grid-template-rows: [react-row] auto [review-row] auto ;   
+    margin: 20px auto; 
     
 }
 
-/* book review positioning */
-
-.book-review img {
-    grid-column-start: start;
-    grid-column-end: img-col;
-    grid-row-start: start;
+.book-review {
+    grid-column: img-col;
+    grid-row-start: react-row;
     grid-row-end: end;
 }
 
 .react1 {
-    grid-column-start: icon-col1;
-    grid-column-end: icon-col2;
-    grid-row-start: start;
-    grid-row-end: top-row;
+    grid-column: icon-col1;
+    grid-row: react-row;
 }
 
 .react2 {
-    grid-column-start: icon-col2;
-    grid-column-end: icon-col3;
-    grid-row-start: start;
-    grid-row-end: top-row;
+    grid-column: icon-col2;
+    grid-row: react-row;
 }
 
 .react3 {
-    grid-column-start: icon-col3;
-    grid-column-end: end;
-    grid-row-start: start;
-    grid-row-end: top-row;
+    grid-column: icon-col3;
+    grid-row: react-row;
 }
 
 .text-review {
     grid-column-start: icon-col1;
     grid-column-end: end;
-    grid-row-start: bottom-row;
+    grid-row: review-row;
+}
+
+/* book review positioning left aligned */
+
+.review-grid-right-aligned {
+    display: grid;
+    width: 100%;
+    row-gap: 1em;
+    column-gap: 2%;
+    grid-template-columns: [icon-col1] 18% [icon-col2] 18% [icon-col3] 18% [img-col] 38% ;
+    grid-template-rows: [react-row] auto [review-row] auto ;   
+    margin: auto 20px; 
+}
+
+.book-review-right {
+    grid-column: img-col;
+    grid-row-start: react-row;
     grid-row-end: end;
 }
 
-.react1, .react2, .react3, .text-review{
+.react1-left {
+    grid-column: icon-col1;
+    grid-row: react-row;
+}
+
+.react2-left {
+    grid-column: icon-col2;
+    grid-row: react-row;
+}
+
+.react3-left {
+    grid-column: icon-col3;
+    grid-row: react-row;
+}
+
+.text-review-left {
+    grid-column-start: icon-col1;
+    grid-column-end: img-col;
+    grid-row: review-row;
+}
+
+/* book review all*/
+
+.react1, .react2, .react3, .text-review, .book-review, .react1-left, .react2-left, .react3-left {
     display: block;
+}
+
+.emoji {
+    font-size: 200%;
+}
+
+.react1 p, .react2 p, .react3 p, .text-review h4, .react1-left p, .react2-left p, .react3-left p, .text-review-left h4 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.text-review p, .text-review-left p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 87.5%;
+}
+
+.book-review img, .book-review-right img {
+    max-width: 300px;
+    max-height: 455px;
+    padding: 1% 18%;
 }

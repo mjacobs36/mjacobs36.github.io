@@ -1,0 +1,35 @@
+* {
+    font-size: 16px;
+    color: #39391E;
+}
+
+#welcome h2 {
+    font-size: 150%;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#welcome p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#personal-page h3, #portfolio-embed h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 125%;
+}
+
+#personal-page p, #portfolio-embed p, #email p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#email, #welcome, #personal-page, #portfolio-embed {
+    margin: 40px 10px;
+}
+
+#personal-page a {
+    color: #733439;
+}
+
+#personal-page a:hover {
+    background-color: #BEBF93;;
+}
+
