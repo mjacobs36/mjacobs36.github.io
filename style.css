@@ -625,7 +625,7 @@ input[type=submit]:hover, input[type=reset]:hover {
     font-family: 'Libre Baskerville', serif;
 }
 
-.text-review p, .text-review-left p {
+.text-review p, .text-review-left p, .text-review p em, .text-review-left p em{
     font-family: 'Montserrat', sans-serif;
     font-size: 87.5%;
 }
