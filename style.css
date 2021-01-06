@@ -271,7 +271,7 @@ footer {
     width: 100%;
     height: fit-content ;
     display: grid;
-    grid-template-columns: [first] 14% [entry1] 33% [entry2] 33% [last] 14% ;
+    grid-template-columns: [first] 10% [entry1] 37% [entry2] 37% [last] 10% ;
     grid-template-rows: [row1] auto [row2] auto [row3] auto [row4] auto;
     row-gap: 1em;
     column-gap: 2%;
@@ -314,7 +314,7 @@ footer {
 
 }
 
-.grid-playlist3 {
+#grid-playlist3 {
     grid-column-start: entry2;
     grid-column-end: last;
     grid-row-start: row3;
