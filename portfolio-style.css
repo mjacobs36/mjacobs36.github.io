@@ -17,19 +17,19 @@
     font-size: 125%;
 }
 
-#personal-page p, #portfolio-embed p, #email p, #portfolio-embed li {
+#personal-page p, #portfolio-embed p, #portfolio-embed li {
     font-family: 'Montserrat', sans-serif;
 }
 
-#email, #welcome, #personal-page, #portfolio-embed {
+#welcome, #personal-page, #portfolio-embed {
     margin: 40px 10px;
 }
 
-#personal-page a, #portfolio-embed li a, #email a{
+#personal-page a, #portfolio-embed li a{
     color: #733439;
 }
 
-#personal-page a:hover, #portfolio-embed li a:hover, #email a:hover {
+#personal-page a:hover, #portfolio-embed li a:hover {
     background-color: #BEBF93;;
 }
 
