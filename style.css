@@ -207,8 +207,13 @@ footer {
     color: #D8D9D7;
     width: 100%;
     height: auto;
-    padding: 10px 0;
-    font-size: 12px;
+    padding: 10px 0px;
+}
+
+footer p {
+    font-size: 75%;
+    line-height: 0%;
+    padding-left: 10px;
 }
 
 .resume {
