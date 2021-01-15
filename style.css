@@ -44,7 +44,8 @@ nav a:hover, .drop-button{
     color: #733439;
 }
 
-/* drop down */
+/* drop down
+Credit to https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp for the CSS */
 
 /* The dropdown container */
 .dropdown {
